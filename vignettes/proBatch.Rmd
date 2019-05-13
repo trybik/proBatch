@@ -118,8 +118,9 @@ numerous dependencies. If some of these dependencies are not installed, you will
 need to do that before running `proBatch`.
 ```{r dependencies, eval = FALSE}
 bioc_deps <- c("GO.db", "impute", "preprocessCore", "pvca","sva" )
-cran_deps <- c("corrplot", "data.table", "ggplot2", "ggfortify","lazyeval", "pheatmap", "reshape2", "rlang", 
-               "tibble", "dplyr", "tidyr" "wesanderson","WGCNA") 
+cran_deps <- c("corrplot", "data.table", "ggplot2", "ggfortify","lazyeval", 
+               "lubridate", "pheatmap", "reshape2","readr", "rlang", 
+               "tibble", "dplyr", "tidyr", "wesanderson","WGCNA") 
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
